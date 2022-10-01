@@ -15,11 +15,11 @@ function App()  {
       <>
         <Navbar />
         <Main />
-        <Row title='UpComing' fetchURL={requests.requestsUpComing}/>
-        <Row title='Popular' fetchURL={requests.requestsPopular}/>
-        <Row title='Top Rated' fetchURL={requests.requestsTopRated}/>
-        <Row title='Trending' fetchURL={requests.requestsTrending}/>
-        <Row title='Horror' fetchURL={requests.requestsHorror}/>
+        <Row rowID='1' title='Netflix Originals' fetchURL={requests.requestsUpComing}/>
+        <Row rowID='2' title='Popular' fetchURL={requests.requestsPopular}/>
+        <Row rowID='3' title='Top Rated' fetchURL={requests.requestsTopRated}/>
+        <Row rowID='4' title='Trending' fetchURL={requests.requestsTrending}/>
+        <Row rowID='5' title='Horror' fetchURL={requests.requestsHorror}/>
 
  
       </>
