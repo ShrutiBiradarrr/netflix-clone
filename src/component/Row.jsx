@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import requests from "../Request";
 import Movie from "./Movie";
-//import {MdChevronLeft , MdChevronRight} from 'react-icons/md'
+import {MdChevronLeft , MdChevronRight} from 'react-icons/md'
 
 function Row({ title, fetchURL ,rowID }) {
   const [movies, setMovies] = useState([]);
@@ -31,10 +31,10 @@ function Row({ title, fetchURL ,rowID }) {
   return (
     <>
       <h2 className="text-white font-bold md:text-xl p-4">{title}</h2>
-      <div className="relative flex item-center  ">
-        {/* <MdChevronLeft  */}
-        {/* onClick={sliderLeft} className="bg-white rounded-full left-0 absolute opacity-50 hover:opacity-100 cursor-pointer z-20  group-hover:block" size={40} /> */}
-        <div id={"slider" + rowID} className="overflow-x-scroll overflow-y-hidden flex  whitespace-nowrap scroll-smooth scrollbar-hide relative">
+      <div className="overflow-x-scroll scrollbar-hide item-center  ">
+        {/* <MdChevronLeft 
+        onClick={sliderLeft} className="bg-white rounded-full left-0 absolute opacity-50 hover:opacity-100 cursor-pointer z-20  group-hover:block" size={40} /> */}
+        <div id={"slider" + rowID} className=" w-fit flex ">
           {movies.map((ele, index) => (
             
              <Movie key={index} ele={ele}/>

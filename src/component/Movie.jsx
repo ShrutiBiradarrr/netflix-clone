@@ -6,9 +6,9 @@ function Movie({ele}) {
 
     return (
         <>
-         <div className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2">
+         <div className=" inline-block h-[200px] w-[250px] cursor-pointer relative p-2">
                 {/* <h1 className="text-white">{ele && ele.title}</h1> */}
-                <img className="w-full h-auto block"
+                <img className="object-cover h-full w-full block"
                   src={`https://image.tmdb.org/t/p/original/${
                     ele && ele.backdrop_path
                   }`}
