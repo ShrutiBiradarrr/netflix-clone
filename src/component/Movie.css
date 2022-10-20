@@ -1,0 +1,20 @@
+.img-card{
+ 
+    border-radius: 6px;
+    /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3); */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.shadowCard{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    filter: opacity(0%);
+}
+
+.shadowCard:hover{
+    filter: opacity(100%);
+}
+.movie-card:hover .img-card{
+    filter: brightness(20%) !important;
+}

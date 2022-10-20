@@ -30,7 +30,7 @@ function Row({ title, fetchURL ,rowID }) {
 
   return (
     <>
-      <h2 className="text-white font-bold md:text-xl p-4">{title}</h2>
+      <h2 className="text-black font-bold md:text-xl p-4">{title}</h2>
       <div className="overflow-x-scroll scrollbar-hide item-center  ">
         {/* <MdChevronLeft 
         onClick={sliderLeft} className="bg-white rounded-full left-0 absolute opacity-50 hover:opacity-100 cursor-pointer z-20  group-hover:block" size={40} /> */}
